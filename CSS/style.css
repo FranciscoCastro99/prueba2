@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+}
+:root{
+    backdrop-filter: blur(5rem) --filter;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    position: relative;
+}
+video{
+    height: 100% !important;
+    width: 100%;
+    z-index:-3;
+    object-fit: cover;
+    position: absolute;
+    background-size: cover;
+}
+.contenedor{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    position: relative;
+    display: grid;
+    place-items:center;
+    grid-template-columns: 1fr;
+    height: 8%;
+    border: 1px solid black;
+    backdrop-filter: var(--filter);
+    z-index: 3;
+}
+nav ul{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(53, 140, 202);
+    font-size: 25px;
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80rem;
+    width: 100%;
+
+}
+
+
+footer {
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    animation: 4s step-end;
+    font-size: 2rem;
+    color: rgb(107, 172, 192);
+    text-decoration: none;
+}
+
+footer img{
+    height: 3rem;
+     width: 3rem;
+}
+
+footer img:hover{
+    transition: all 100ms ease-in-out;
+    height: 4rem;
+    width: 4rem;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 10%;
+    width: 80%;   
+}
+
+.contenedor-forms{
+    margin-right: 1rem;
+    display: grid;
+    place-content: center;
+    height: 40rem;
+    width: 30rem;
+    border: 1px solid black;
+    border-radius: 5%;
+    backdrop-filter: var(--filter);
+}
+
+.img{
+    margin-left: 3rem;
+}
